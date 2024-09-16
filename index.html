@@ -4,52 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GS Enterprises</title>
+    <title>GS Enterprises - Candy Distributors</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Chewy', cursive;
+            background-color: #f9e1e1;
+            color: #4b2e83;
+            text-align: center;
+        }
+
         header {
-            background-color: #4CAF50;
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ff3366;
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .hero {
+            padding: 20px;
+            background: #ff3366;
             color: white;
-            padding: 20px;
+        }
+
+        .hero h3 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .cta-btn {
+            margin-top: 20px;
+            background-color: #ffcc00;
+            color: #4b2e83;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .products {
+            background-color: #ffcc00;
+            padding: 40px 20px;
+        }
+
+        .products h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #4b2e83;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product {
             text-align: center;
         }
-        section {
-            padding: 20px;
-            text-align: center;
+
+        .product img {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
         }
+
+        .product p {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #4b2e83;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #ff3366;
             color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px 0;
         }
-        h1 {
-            margin-top: 0;
+
+        footer p {
+            font-size: 1.2rem;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Welcome to GS Enterprises</h1>
+        <h2>Your Candy Distribution Partner in Hyderabad!</h2>
+    </header>
 
-<header>
-    <h1>Welcome to GS Enterprises</h1>
-</header>
+    <section class="hero">
+        <img src="https://b12.io/gpt/p/?sn=889b7Mz" alt="Candy distribution banner">
+        <h3>Distributors of Alpenliebe, Center Fresh & more</h3>
+        <button class="cta-btn">Explore Our Products</button>
+    </section>
 
-<section>
-    <h2>Your Trusted Partner for Business Solutions</h2>
-    <p>At GS Enterprises, we provide innovative solutions to help your business grow. From cutting-edge technology to outstanding customer service, we are dedicated to your success.</p>
-</section>
+    <section class="products">
+        <h2>Our Sweet Selection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://dummyimage.com/300x300/ffcc00/ffffff&text=Alpenliebe" alt="Alpenliebe">
+                <p>Alpenliebe</p>
+            </div>
+            <div class="product">
+                <img src="https://dummyimage.com/300x300/ff3366/ffffff&text=Center+Fresh" alt="Center Fresh">
+                <p>Center Fresh</p>
+            </div>
+            <div class="product">
+                <img src="https://dummyimage.com/300x300/ff6633/ffffff&text=Chocolates" alt="Chocolates">
+                <p>Chocolates</p>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2024 GS Enterprises. All Rights Reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 GS Enterprises. All Rights Reserved. | Hyderabad, Telangana</p>
+    </footer>
 </body>
 </html>
