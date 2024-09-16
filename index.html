@@ -17,6 +17,8 @@
             background-color: #f9e1e1;
             color: #4b2e83;
             text-align: center;
+            position: relative;
+            min-height: 100vh;
         }
 
         header {
@@ -62,19 +64,6 @@
             cursor: pointer;
         }
 
-        .whatsapp-btn {
-            display: inline-block;
-            margin-top: 20px;
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
         .products {
             background-color: #ffcc00;
             padding: 40px 20px;
@@ -116,6 +105,20 @@
         footer p {
             font-size: 1.2rem;
         }
+
+        /* WhatsApp Icon Style */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .whatsapp-icon img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
@@ -129,7 +132,6 @@
         <img src="https://b12.io/gpt/p/?sn=889b7Mz" alt="Candy distribution banner">
         <h3>Distributors of Alpenliebe, Center Fresh & more</h3>
         <button class="cta-btn">Explore Our Products</button>
-        <a href="https://wa.me/917997250755" class="whatsapp-btn">Chat with us on WhatsApp</a>
     </section>
 
     <section class="products">
@@ -153,5 +155,12 @@
     <footer>
         <p>&copy; 2024 GS Enterprises. All Rights Reserved. | Hyderabad, Telangana</p>
     </footer>
+
+    <!-- WhatsApp Chatbot Icon -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/917997250755" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Chat">
+        </a>
+    </div>
 </body>
 </html>
